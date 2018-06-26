@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/white"
     android:layout_height="match_parent"
     tools:context="com.example.mohanmmohadikar.javaquiz.MainActivity">
@@ -34,7 +35,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="monospace"
-            android:hint="@string/name" />
+            android:hint="@string/name"
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
+            app:errorEnabled="true"/>
     </android.support.design.widget.TextInputLayout>
 
     <Button

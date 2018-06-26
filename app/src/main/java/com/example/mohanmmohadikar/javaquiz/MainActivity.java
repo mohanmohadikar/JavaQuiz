@@ -6,6 +6,7 @@ import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,9 +26,29 @@ public class MainActivity extends AppCompatActivity {
 
         b1.setOnClickListener(v->{
 
+
             name = il.getEditText().getText().toString().trim();
 
-            sendTo();
+            if(name.isEmpty()){
+
+                Toast.makeText(MainActivity.this, "Field can't be empty", Toast.LENGTH_LONG).show();
+            }
+            else if (name.length() > 10) {
+
+                Toast.makeText(MainActivity.this, "Your name should be less than 10 character", Toast.LENGTH_LONG).show();
+
+
+            }
+            else{
+
+
+                sendTo();
+
+            }
+
+
+
+
 
         });
 
@@ -44,4 +65,7 @@ public class MainActivity extends AppCompatActivity {
         finish();
 
     }
+
+
+
 }

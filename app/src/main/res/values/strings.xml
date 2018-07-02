@@ -6,7 +6,7 @@
     <string name="a1">int a = Math.abs(-5);</string>
     <string name="b1">int b = Math.abs(5.0);</string>
     <string name="c1">int c = Math.abs(5.5F);</string>
-    <string name="d1">int c = Math.abs(5.5F);</string>
+    <string name="d1">int d = Math.abs(-5.5F);</string>
 
     <string name="q2">Give the abbreviation of AWT?</string>
     <string name="a2">Applet Windowing Toolkit</string>
